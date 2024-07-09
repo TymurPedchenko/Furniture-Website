@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-container container">
+        <a href="./home.html" class="header-logo link"
+          ><img
+            src="./images/home/logo-img.svg"
+            alt="Logo"
+            class="header-logo-img image"
+          />
+          <p class="header-logo-text">Furniro</p></a
+        >
+        <ul class="first-nav-list list">
+          <li class="first-list-item">
+            <a href="" class="first-nav-link link">Home</a>
+          </li>
+
+          <li class="first-list-item">
+            <a
+              href="./shop.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="first-nav-link link"
+              >Shop</a
+            >
+          </li>
+
+          <li class="first-list-item">
+            <a href="" class="first-nav-link link">About</a>
+          </li>
+
+          <li class="first-list-item">
+            <a href="" class="first-nav-link link">Contact</a>
+          </li>
+        </ul>
+        <ul class="second-nav-list list">
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/profile-img.svg"
+                alt="Profile"
+                class="second-nav-link image"
+            /></a>
+          </li>
+
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/search-img.svg"
+                alt="Search"
+                class="second-nav-link image"
+            /></a>
+          </li>
+
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/liked-img.svg"
+                alt="Liked"
+                class="second-nav-link image"
+            /></a>
+          </li>
+
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/cart-img.svg"
+                alt="Cart"
+                class="second-nav-link image"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container container">
+          <div class="hero-box">
+            <p class="hero-subtitle">New Arrival</p>
+            <h1 class="hero-title">
+              Discover Our <br />
+              New Collection
+            </h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button type="button" class="hero-button">BUY NOW</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Range Section -->
+      <section>
+        <div class="range-container container">
+          <h2 class="range-title">Browse The Range</h2>
+          <p class="range-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <ul class="range-list list">
+            <li class="range-item">
+              <img
+                src="./images/home/dining-img.jpg"
+                alt="Dining room"
+                class="range-item-image image"
+              />
+              <h3>Dining</h3>
+            </li>
+
+            <li class="range-item">
+              <img
+                src="./images/home/living-img.jpg"
+                alt="Living room"
+                class="range-item-image image"
+              />
+              <h3 class="range-item-title">Living</h3>
+            </li>
+
+            <li class="range-item">
+              <img
+                src="./images/home/bedroom-img.jpg"
+                alt="Bedroom"
+                class="range-item-image image"
+              />
+              <h3 class="range-item-title">Bedroom</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section>
+        <div class="products-container container">
+          <h2 class="products-title">Our Products</h2>
+          <ul class="products-list list">
+            <li class="products-list-item">
+              <img
+                src="./images/home/syltherine-img.jpg"
+                alt="Syltherine"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Syltherine</h3>
+                <p class="products-item-description">Stylish cafe chair</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 2.500.000</p>
+                  <p class="products-previous-price">Rp 3.500.000</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/leviosa-img.jpg"
+                alt="Leviosa"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Leviosa</h3>
+                <p class="products-item-description">Stylish cafe chair</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 2.500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/lolito-img.jpg"
+                alt="Lolito"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Lolito</h3>
+                <p class="products-item-description">Luxury big sofa</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 7.000.000</p>
+                  <p class="products-previous-price">Rp 14.000.000</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/respira-img.jpg"
+                alt="Respira"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Respira</h3>
+                <p class="products-item-description">
+                  Outdoor bar table and stool
+                </p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/grifo-img.jpg"
+                alt="Grifo"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Grifo</h3>
+                <p class="products-item-description">Night lamp</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 1.500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/muggo-img.jpg"
+                alt="Muggo"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Muggo</h3>
+                <p class="products-item-description">Small mug</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 150.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/pingky-img.jpg"
+                alt="Pingky"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Pingky</h3>
+                <p class="products-item-description">Cute bed set</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 7.000.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/potty-img.jpg"
+                alt="Potty"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Potty</h3>
+                <p class="products-item-description">Minimalist flower pot</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="products-button">Show More</button>
+        </div>
+      </section>
+
+      <!-- Inspiration Section -->
+      <section>
+        <div class="inspiration-container container">
+          <div class="inspiration-text-container">
+            <h2 class="inspiration-title">50+ Beautiful rooms inspiration</h2>
+            <p class="inspiration-text">
+              Our designer already made a lot of beautiful prototipe of rooms
+              that inspire you
+            </p>
+            <button type="button" class="inspiration-button">
+              Explore More
+            </button>
+          </div>
+          <div class="inspiration-box">
+            <img
+              src="./images/home/inspiration-img-1.jpg"
+              alt="Bedroom"
+              class="inspiration-box-image image"
+            />
+            <div class="inspiration-text-box">
+              <div class="inspiration-secondary-box">
+                <div class="inspiration-third-box">
+                  <p class="inspiration-box-suptitle">01</p>
+                  <p class="inspiration-box-suptitle">Bed Room</p>
+                </div>
+                <h3 class="inspiration-box-title">Inner Peace</h3>
+              </div>
+              <button type="button" class="inspiration-box-button">
+                <img
+                  src="./images/home/inspiration-button-img.svg"
+                  alt="Button"
+                  class="inspiration-button-image image"
+                />
+              </button>
+            </div>
+          </div>
+          <!-- <ul class="inspiration-list list">
+            <li class="imspiration-item">
+              <img
+                src="./images/home/inspiration-img-2.jpg"
+                alt="Room"
+                class="inspiration-image image"
+              />
+            </li>
+            <li class="imspiration-item">
+              <img
+                src="./images/home/inspiration-img-3.jpg"
+                alt="Room"
+                class="inspiration-image image"
+              />
+            </li>
+          </ul> -->
+        </div>
+      </section>
+
+      <!-- Furniture Section -->
+      <section class="furniture">
+        <div class="furniture-container container">
+          <p class="furniture-subtitle">Share your setup with</p>
+          <h2 class="furniture-title">#FuniroFurniture</h2>
+        </div>
+        <!-- <ul class="furniture-list list">
+              <ul class="first-list-container list">
+                <li>
+                  <img
+                    src="./images/home/furniture-img-1.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/home/furniture-img-2.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/home/furniture-img-3.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/home/furniture-img-4.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+              </ul>
+          </li>
+          <li class="furniture-image-five">
+            <img
+              src="./images/home/furniture-img-5.jpg"
+              alt="Furniture"
+              class="image"
+            />
+          </li>
+          <li>
+              <ul class="second-list-container list">
+                <li>
+                  <img
+                    src="./images/home/furniture-img-6.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/home/furniture-img-7.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/home/furniture-img-8.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/home/furniture-img-9.jpg"
+                    alt="Furniture"
+                    class="image"
+                  />
+                </li>
+              </ul>
+          </li>
+        </ul> -->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <div class="footer-secondary-box">
+            <a href="" class="link">
+              <p class="footer-logo">Funiro.</p>
+            </a>
+            <address class="footer-address">
+              400 University Drive Suite 200 Coral Gables, <br />
+              FL 33134 USA
+            </address>
+          </div>
+          <ul class="footer-list list">
+            <li class="footer-list-item">
+              <p class="footer-item-title">Links</p>
+              <ul class="footer-second-list list">
+                <li><a href="./home.html" class="footer-link link">Home</a></li>
+                <li><a href="./shop.html" class="footer-link link">Shop</a></li>
+                <li><a href="" class="footer-link link">About</a></li>
+                <li><a href="" class="footer-link link">Contact</a></li>
+              </ul>
+            </li>
+            <li class="footer-list-item">
+              <p class="footer-item-title">Help</p>
+              <ul class="footer-third-list list">
+                <li><a href="" class="footer-link link">Payment Options</a></li>
+                <li><a href="" class="footer-link link">Returns</a></li>
+                <li>
+                  <a href="" class="footer-link link">Privacy Policies</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="footer-newsletter">Newsletter</p>
+        </div>
+        <div class="copyright-container">
+          <p class="copyright">2023 furino. All rights reverved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

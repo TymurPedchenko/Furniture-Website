@@ -1,0 +1,244 @@
+/* ---------- HERO ---------- */
+
+.hero {
+  background-image: url(../images/shop/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 121px;
+  padding-bottom: 97px;
+}
+
+.hero-title {
+  margin-bottom: 2px;
+
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--nav-items-color);
+}
+
+.hero-link-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-home-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--nav-items-color);
+}
+
+.hero-link-img {
+  display: block;
+  padding: 3px 6px;
+}
+
+.hero-shop-link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--nav-items-color);
+}
+
+/* ---------- /HERO ---------- */
+
+/* ---------- CONTROL ---------- */
+
+.control {
+  background-color: #f9f1e7;
+}
+
+.control-container {
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  gap: 30px;
+  align-items: center;
+}
+
+.control-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.control-button {
+  display: flex;
+  align-items: center;
+  padding: 0 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.control-button-filter {
+  gap: 12px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--nav-items-color);
+}
+
+.control-text {
+  padding-left: 34px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--nav-items-color);
+
+  border-left: 2px solid var(--footer-text-color);
+}
+
+.control-sorting-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 29px;
+}
+
+.control-label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--nav-items-color);
+}
+
+.control-input {
+  margin-left: 17px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--footer-text-color);
+
+  border: none;
+  border-radius: 0;
+  background-color: var(--page-background-color);
+}
+
+.control-input-first::-webkit-outer-spin-button,
+.control-input-first::-webkit-inner-spin-button {
+  appearance: none;
+  /* margin: 0; */
+}
+.control-input {
+  padding: 12px 18px;
+
+  appearance: none;
+}
+
+.control-input-first {
+  width: 60px;
+
+  cursor: text;
+}
+
+.control-input-second {
+  padding-left: 30px;
+  width: 188px;
+
+  cursor: pointer;
+}
+
+/* ---------- /CONTROL ---------- */
+
+/* ---------- PRODUCTS ---------- */
+
+.products-container {
+  padding-top: 46px;
+  padding-bottom: 85px;
+}
+
+.products-list {
+  margin-top: 17px;
+  margin-bottom: 40px;
+  column-gap: 32px;
+  row-gap: 40px;
+}
+
+.products-button-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 38px;
+}
+
+.assortment-button {
+  padding: 15px 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--nav-items-color);
+
+  background-color: #f9f1e7;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.assortment-button:hover,
+.assortment-button:focus,
+.assortment-button:active {
+  color: var(--page-background-color);
+  background-color: var(--button-background-color);
+}
+
+/* ---------- /PRODUCTS ---------- */
+
+/* ---------- ADVANTAGES ---------- */
+
+.advantages {
+  background-color: #faf3ea;
+}
+
+.advantages-container {
+  width: 1374px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-image {
+  padding: 5px 10px 5px 0;
+}
+
+.advantages-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #242424;
+}
+
+.advantages-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--products-item-description-color);
+}
+
+/* ---------- /ADVANTAGES ---------- */

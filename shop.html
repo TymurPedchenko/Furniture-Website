@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css/home.css" />
+    <link rel="stylesheet" href="./styles.css/shop.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-container container">
+        <a href="" class="header-logo link"
+          ><img
+            src="./images/home/logo-img.svg"
+            alt="Logo"
+            class="header-logo-img image"
+          />
+          <p class="header-logo-text">Furniro</p></a
+        >
+        <ul class="first-nav-list list">
+          <li class="first-list-item">
+            <a href="./home.html" class="first-nav-link link">Home</a>
+          </li>
+
+          <li class="first-list-item">
+            <a
+              href="./shop.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="first-nav-link link"
+              >Shop</a
+            >
+          </li>
+
+          <li class="first-list-item">
+            <a href="" class="first-nav-link link">About</a>
+          </li>
+
+          <li class="first-list-item">
+            <a href="" class="first-nav-link link">Contact</a>
+          </li>
+        </ul>
+        <ul class="second-nav-list list">
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/profile-img.svg"
+                alt="Profile"
+                class="second-nav-link image"
+            /></a>
+          </li>
+
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/search-img.svg"
+                alt="Search"
+                class="second-nav-link image"
+            /></a>
+          </li>
+
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/liked-img.svg"
+                alt="Liked"
+                class="second-nav-link image"
+            /></a>
+          </li>
+
+          <li class="second-list-item">
+            <a href=""
+              ><img
+                src="./images/home/cart-img.svg"
+                alt="Cart"
+                class="second-nav-link image"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="hero-title">Shop</h1>
+          <ul class="hero-link-list list">
+            <li><a href="./home.html" class="hero-home-link link">Home</a></li>
+            <li>
+              <a href="./shop.html"
+                ><img
+                  src="./images/shop/hero-link-img.svg"
+                  alt="Link"
+                  class="hero-link-img"
+              /></a>
+            </li>
+            <li><a href="./shop.html" class="hero-shop-link link">Shop</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Control Section -->
+      <section class="control">
+        <div class="control-container container">
+          <ul class="control-list list">
+            <li class="control-item">
+              <button
+                type="button"
+                class="control-button-filter control-button"
+              >
+                <img
+                  src="./images/shop/control-img-1.svg"
+                  alt="Control"
+                />Filter
+              </button>
+            </li>
+
+            <li class="control-item">
+              <button type="button" class="control-button">
+                <img src="./images/shop/control-img-2.svg" alt="Control" />
+              </button>
+            </li>
+
+            <li class="control-item">
+              <button type="button" class="control-button">
+                <img src="./images/shop/control-img-3.svg" alt="Control" />
+              </button>
+            </li>
+          </ul>
+          <p class="control-text">Showing 1–16 of 32x results</p>
+          <ul class="control-sorting-list list">
+            <li class="control-sorting-item">
+              <form>
+                <label for="show" class="control-label"
+                  >Show<input
+                    type="number"
+                    name="show"
+                    id="show"
+                    min="1"
+                    max="32"
+                    minlength="1"
+                    maxlength="2"
+                    value="1"
+                    class="control-input-first control-input"
+                /></label>
+              </form>
+            </li>
+
+            <li class="control-sorting-item">
+              <form>
+                <label for="sorting" class="control-label"
+                  >Sort by
+                  <select
+                    name="sorting"
+                    id="sorting"
+                    class="control-input-second control-input"
+                  >
+                    <option value="default" class="control-option">
+                      Default
+                    </option>
+                  </select>
+                </label>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section>
+        <div class="products-container container">
+          <h2 class="products-title" hidden>Our Products</h2>
+          <ul class="products-list list">
+            <li class="products-list-item">
+              <img
+                src="./images/home/syltherine-img.jpg"
+                alt="Syltherine"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Syltherine</h3>
+                <p class="products-item-description">Stylish cafe chair</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 2.500.000</p>
+                  <p class="products-previous-price">Rp 3.500.000</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/leviosa-img.jpg"
+                alt="Leviosa"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Leviosa</h3>
+                <p class="products-item-description">Stylish cafe chair</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 2.500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/lolito-img.jpg"
+                alt="Lolito"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Lolito</h3>
+                <p class="products-item-description">Luxury big sofa</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 7.000.000</p>
+                  <p class="products-previous-price">Rp 14.000.000</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/respira-img.jpg"
+                alt="Respira"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Respira</h3>
+                <p class="products-item-description">
+                  Outdoor bar table and stool
+                </p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/grifo-img.jpg"
+                alt="Grifo"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Grifo</h3>
+                <p class="products-item-description">Night lamp</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 1.500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/muggo-img.jpg"
+                alt="Muggo"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Muggo</h3>
+                <p class="products-item-description">Small mug</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 150.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/pingky-img.jpg"
+                alt="Pingky"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Pingky</h3>
+                <p class="products-item-description">Cute bed set</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 7.000.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/potty-img.jpg"
+                alt="Potty"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Potty</h3>
+                <p class="products-item-description">Minimalist flower pot</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/syltherine-img.jpg"
+                alt="Syltherine"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Syltherine</h3>
+                <p class="products-item-description">Stylish cafe chair</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 2.500.000</p>
+                  <p class="products-previous-price">Rp 3.500.000</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/leviosa-img.jpg"
+                alt="Leviosa"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Leviosa</h3>
+                <p class="products-item-description">Stylish cafe chair</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 2.500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/lolito-img.jpg"
+                alt="Lolito"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Lolito</h3>
+                <p class="products-item-description">Luxury big sofa</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 7.000.000</p>
+                  <p class="products-previous-price">Rp 14.000.000</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/respira-img.jpg"
+                alt="Respira"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Respira</h3>
+                <p class="products-item-description">
+                  Outdoor bar table and stool
+                </p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/grifo-img.jpg"
+                alt="Grifo"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Grifo</h3>
+                <p class="products-item-description">Night lamp</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 1.500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/muggo-img.jpg"
+                alt="Muggo"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Muggo</h3>
+                <p class="products-item-description">Small mug</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 150.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/pingky-img.jpg"
+                alt="Pingky"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Pingky</h3>
+                <p class="products-item-description">Cute bed set</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 7.000.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="products-list-item">
+              <img
+                src="./images/home/potty-img.jpg"
+                alt="Potty"
+                class="products-item-img image"
+              />
+              <div class="products-item-container">
+                <h3 class="products-item-title">Potty</h3>
+                <p class="products-item-description">Minimalist flower pot</p>
+                <div class="products-price-container">
+                  <p class="products-price">Rp 500.000</p>
+                  <p hidden class="products-previous-price"></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="products-button-list list">
+            <li class="button-list-item">
+              <button type="button" class="assortment-button">1</button>
+            </li>
+            <li class="button-list-item">
+              <button type="button" class="assortment-button">2</button>
+            </li>
+            <li class="button-list-item">
+              <button type="button" class="assortment-button">3</button>
+            </li>
+            <li class="button-list-item">
+              <button type="button" class="assortment-button">Next</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Advantages Section -->
+      <section class="advantages">
+        <div class="advantages-container container">
+          <ul class="advantages-list list">
+            <li class="advantages-item">
+              <img
+                src="./images/shop/advantages-img-1.png"
+                alt=""
+                class="advantages-image image"
+              />
+              <div class="advantages-description-container">
+                <h3 class="advantages-title">High Quality</h3>
+                <p class="advantages-text">Crafted from top materials</p>
+              </div>
+            </li>
+
+            <li class="advantages-item">
+              <img
+                src="./images/shop/advantages-img-2.png"
+                alt=""
+                class="advantages-image image"
+              />
+              <div class="advantages-description-container">
+                <h3 class="advantages-title">Warranty Protection</h3>
+                <p class="advantages-text">Over 2 years</p>
+              </div>
+            </li>
+
+            <li class="advantages-item">
+              <img
+                src="./images/shop/advantages-img-3.png"
+                alt=""
+                class="advantages-image image"
+              />
+              <div class="advantages-description-container">
+                <h3 class="advantages-title">Free Shipping</h3>
+                <p class="advantages-text">Order over 150 $</p>
+              </div>
+            </li>
+
+            <li class="advantages-item">
+              <img
+                src="./images/shop/advantages-img-4.png"
+                alt=""
+                class="advantages-image image"
+              />
+              <div class="advantages-description-container">
+                <h3 class="advantages-title">24 / 7 Support</h3>
+                <p class="advantages-text">Dedicated support</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <div class="footer-secondary-box">
+            <a href="" class="link">
+              <p class="footer-logo">Funiro.</p>
+            </a>
+            <address class="footer-address">
+              400 University Drive Suite 200 Coral Gables, <br />
+              FL 33134 USA
+            </address>
+          </div>
+          <ul class="footer-list list">
+            <li class="footer-list-item">
+              <p class="footer-item-title">Links</p>
+              <ul class="footer-second-list list">
+                <li><a href="./home.html" class="footer-link link">Home</a></li>
+                <li><a href="./shop.html" class="footer-link link">Shop</a></li>
+                <li><a href="" class="footer-link link">About</a></li>
+                <li><a href="" class="footer-link link">Contact</a></li>
+              </ul>
+            </li>
+            <li class="footer-list-item">
+              <p class="footer-item-title">Help</p>
+              <ul class="footer-third-list list">
+                <li><a href="" class="footer-link link">Payment Options</a></li>
+                <li><a href="" class="footer-link link">Returns</a></li>
+                <li>
+                  <a href="" class="footer-link link">Privacy Policies</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="footer-newsletter">Newsletter</p>
+        </div>
+        <div class="copyright-container">
+          <p class="copyright">2023 furino. All rights reverved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
