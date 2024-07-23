@@ -14,6 +14,7 @@
   --inspiration-background-color: #fcf8f3;
   --inspiration-text-color: #616161;
   --footer-text-color: #9f9f9f;
+  --transition: 250ms linear;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 .container {
   /* display: flex; */
-  width: 1280px;
+  max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -81,6 +82,12 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: var(--nav-items-color);
+
+  transition: color var(--transition);
+}
+
+.first-nav-link:is(:hover, :focus) {
+  color: #b88e2f;
 }
 
 .second-nav-list {
@@ -107,12 +114,36 @@ p {
   color: var(--nav-items-color);
 }
 
+.profile-icon,
+.cart-icon {
+  fill: black;
+  transition: fill var(--transition), scale var(--transition);
+}
+
+.profile-icon:is(:hover, :focus),
+.cart-icon:is(:hover, :focus) {
+  fill: #b88e2f;
+  /* scale: 0.95; */
+}
+
+.search-icon,
+.liked-icon {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+.liked-icon {
+  stroke-linejoin: round;
+}
+
 /* ---------- /HEADER ---------- */
 
 /* ---------- HERO ---------- */
 
 .hero {
-  /* max-width: 1440px; */
+  max-width: 1440px;
   background-image: url("../images/home/hero-background-img.jpg");
   background-position: center;
 }
@@ -126,7 +157,7 @@ p {
   margin-left: auto;
   padding: 62px 43px 37px 39px;
 
-  width: 643px;
+  max-width: 643px;
 
   background-color: var(--hero-box-color);
   border-radius: 10px;
@@ -173,8 +204,17 @@ p {
   color: var(--page-background-color);
 
   background-color: var(--button-background-color);
-  border: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
+  transition: color var(--transition), background-color var(--transition),
+    border var(--transition), transform var(--transition);
+}
+
+.hero-button:is(:hover, :focus) {
+  color: #b88e2f;
+  background-color: transparent;
+  border: 1px solid var(--button-background-color);
+  transform: scale(0.95);
 }
 
 /* ---------- /HERO ---------- */
@@ -247,6 +287,119 @@ p {
   margin-bottom: 32px;
 }
 
+.products-img-wrap {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(58, 58, 58, 0.72);
+  opacity: 0;
+  cursor: default;
+  transition: opacity var(--transition), transform var(--transition),
+    background-color var(--transition);
+}
+
+.products-link:is(:hover, :focus) .overlay,
+.products-list-item:is(:hover, :focus) .overlay {
+  opacity: 1;
+  background-color: rgba(58, 58, 58, 0.72);
+  transform: translate(0, -100%);
+}
+
+.overlay-button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 252px;
+}
+
+.products-overlay-button {
+  padding: 12px 52px;
+  margin-bottom: 24px;
+
+  width: 202px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b88e2f;
+
+  cursor: pointer;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  transition: color var(--transition), background-color var(--transition),
+    border var(--transition), scale var(--transition);
+}
+
+.products-overlay-button:is(:hover, :focus) {
+  color: #ffffff;
+
+  background-color: #b88e2f;
+  border: 1px solid transparent;
+  scale: 0.95;
+}
+
+.products-btn-list {
+  display: flex;
+  gap: 20px;
+
+  max-width: 252px;
+}
+
+.products-overlay-btn {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.like-button {
+  margin: 0;
+  padding: 0;
+}
+
+.products-btn-icon {
+  fill: #ffffff;
+}
+
+.like-icon {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.products-btn-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+
+  transition: color var(--transition);
+}
+
+.products-btn-text:is(:hover, :focus) {
+  color: #b88e2f;
+}
+
 .products-item-container {
   background-color: var(--products-item-background-color);
   padding: 16px 20px 30px 16px;
@@ -301,6 +454,15 @@ p {
   background-color: transparent;
   border: 1px solid var(--button-background-color);
   cursor: pointer;
+  transition: color var(--transition), background-color var(--transition),
+    border var(--transition), transform var(--transition);
+}
+
+.products-button:is(:hover, :focus) {
+  color: #ffffff;
+  background-color: var(--button-background-color);
+  border: 1px solid transparent;
+  transform: scale(0.95);
 }
 
 /* ---------- /PRODUCTS ---------- */
@@ -316,7 +478,7 @@ p {
 }
 
 .inspiration-text-container {
-  width: 442px;
+  max-width: 442px;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 42px;
@@ -349,8 +511,17 @@ p {
   color: var(--page-background-color);
 
   background-color: var(--button-background-color);
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
+  transition: color var(--transition), background-color var(--transition),
+    border var(--transition), transform var(--transition);
+}
+
+.inspiration-button:is(:hover, :focus) {
+  color: #b88e2f;
+  background-color: transparent;
+  border: 1px solid var(--button-background-color);
+  transform: scale(0.95);
 }
 
 .inspiration-box {
@@ -400,12 +571,28 @@ p {
   padding: 12px;
 
   background-color: var(--button-background-color);
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
+  transition: background-color var(--transition), border var(--transition),
+    scale var(--transition);
 }
 
-.inspiration-button-image {
+.inspiration-box-button:is(:hover, :focus) {
+  background-color: transparent;
+  border: 1px solid var(--button-background-color);
+  scale: 0.95;
+}
+
+.inspiration-icon {
   padding: 6px 3px;
+  fill: none;
+  stroke: #ffffff;
+  style: stroke;
+}
+
+.inspiration-box-button:is(:hover, :focus) .inspiration-icon {
+  fill: #b88e2f;
+  scale: 0.95;
 }
 
 /* .inspiration-list {
@@ -417,7 +604,7 @@ p {
 /* ---------- FURNITURE ---------- */
 
 /* .furniture {
-  width: 1799px;
+  max-width: 1799px;
 }
 
 .furniture-list {
@@ -499,7 +686,7 @@ p {
 }
 
 .footer-address {
-  width: 285px;
+  max-width: 285px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;

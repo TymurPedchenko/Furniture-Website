@@ -22,11 +22,12 @@
   <body>
     <header class="header">
       <nav class="header-container container">
-        <a href="./home.html" class="header-logo link"
-          ><img
-            src="./images/home/logo-img.svg"
-            alt="Logo"
-            class="header-logo-img image"
+        <a href="./index.html" class="header-logo link">
+          <img
+            href="./images/home/logo.svg"
+            class="header-item"
+            width="50"
+            height="32"
           />
           <p class="header-logo-text">Furniro</p></a
         >
@@ -55,39 +56,35 @@
         </ul>
         <ul class="second-nav-list list">
           <li class="second-list-item">
-            <a href=""
-              ><img
-                src="./images/home/profile-img.svg"
-                alt="Profile"
-                class="second-nav-link image"
-            /></a>
+            <a href="">
+              <svg class="header-icon profile-icon" width="28" height="28">
+                <use href="./images/home/sprite.svg#profile"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="second-list-item">
             <a href=""
-              ><img
-                src="./images/home/search-img.svg"
-                alt="Search"
-                class="second-nav-link image"
-            /></a>
+              ><svg class="header-icon search-icon" width="28" height="28">
+                <use href="./images/home/sprite.svg#search"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="second-list-item">
             <a href=""
-              ><img
-                src="./images/home/liked-img.svg"
-                alt="Liked"
-                class="second-nav-link image"
-            /></a>
+              ><svg class="header-icon liked-icon" width="28" height="28">
+                <use href="./images/home/sprite.svg#liked"></use>
+              </svg>
+            </a>
           </li>
 
           <li class="second-list-item">
             <a href=""
-              ><img
-                src="./images/home/cart-img.svg"
-                alt="Cart"
-                class="second-nav-link image"
-            /></a>
+              ><svg class="header-icon cart-icon" width="28" height="28">
+                <use href="./images/home/sprite.svg#cart"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
@@ -155,19 +152,59 @@
           <h2 class="products-title">Our Products</h2>
           <ul class="products-list list">
             <li class="products-list-item">
-              <img
-                src="./images/home/syltherine-img.jpg"
-                alt="Syltherine"
-                class="products-item-img image"
-              />
-              <div class="products-item-container">
-                <h3 class="products-item-title">Syltherine</h3>
-                <p class="products-item-description">Stylish cafe chair</p>
-                <div class="products-price-container">
-                  <p class="products-price">Rp 2.500.000</p>
-                  <p class="products-previous-price">Rp 3.500.000</p>
+              <div class="products-img-wrap">
+                <img
+                  src="./images/home/syltherine-img.jpg"
+                  alt="Syltherine"
+                  class="products-item-img image"
+                />
+                <div class="overlay">
+                  <div class="overlay-button-wrap">
+                    <button type="button" class="products-overlay-button">
+                      Add to cart
+                    </button>
+                    <div class="products-btn-list list">
+                      <a href="" class="products-overlay-btn link">
+                        <svg class="products-btn-icon" width="16" height="16">
+                          <use href="./images/home/sprite.svg#share"></use>
+                        </svg>
+                        <p class="products-btn-text">Share</p>
+                      </a>
+
+                      <a href="" class="products-overlay-btn link">
+                        <svg class="products-btn-icon" width="16" height="16">
+                          <use href="./images/home/sprite.svg#compare"></use>
+                        </svg>
+                        <p class="products-btn-text">Compare</p>
+                      </a>
+
+                      <button
+                        type="button"
+                        class="products-overlay-btn like-button"
+                      >
+                        <svg
+                          class="products-btn-icon like-icon"
+                          width="16"
+                          height="16"
+                        >
+                          <use href="./images/home/sprite.svg#like"></use>
+                        </svg>
+                        <p class="products-btn-text">Like</p>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <a href="" class="products-link link">
+                <div class="products-item-container">
+                  <h3 class="products-item-title">Syltherine</h3>
+                  <p class="products-item-description">Stylish cafe chair</p>
+                  <div class="products-price-container">
+                    <p class="products-price">Rp 2.500.000</p>
+                    <p class="products-previous-price">Rp 3.500.000</p>
+                  </div>
+                </div>
+              </a>
             </li>
 
             <li class="products-list-item">
@@ -316,11 +353,9 @@
                 <h3 class="inspiration-box-title">Inner Peace</h3>
               </div>
               <button type="button" class="inspiration-box-button">
-                <img
-                  src="./images/home/inspiration-button-img.svg"
-                  alt="Button"
-                  class="inspiration-button-image image"
-                />
+                <svg class="inspiration-icon" width="24" height="24">
+                  <use href="./images/home/sprite.svg#inspiration-button"></use>
+                </svg>
               </button>
             </div>
           </div>
